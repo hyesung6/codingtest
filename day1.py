@@ -1,20 +1,8 @@
-T = int(input())
-for i in range(T):
-    VPS = []
-    for j in input():
-
-
-# 이전 요소와 다른 요소가 들어오면 YES, 같은 요소가 반복되면 NO
-
-
-
-
-
-
 
 
 """
 # Answer
+
 T = int(input())
 for i in range(T):
     stk = []
@@ -31,4 +19,6 @@ for i in range(T):
 
     if len(stk) > 0:
         isVPS = False
+    
+    print('YES' if isVPS else 'NO')
 """
