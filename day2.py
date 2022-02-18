@@ -5,16 +5,29 @@
 # 1장이 남을 때까지 반복한다.
 
 
+# N = int(input())
+#
+# card = range(1, N+1)
+# deck = []
+# for i in card:
+#     deck.append(i)
+#
+# while len(deck) > 1:
+#     del deck[0]
+#     deck.append(deck[0])
+#     del deck[0]
+#
+# print(deck[0])
+
+
+
+# Answer
+from collections import deque
+
 N = int(input())
-
-card = range(1, N+1)
-deck = []
-for i in card:
-    deck.append(i)
-
-while len(deck) > 1:
-    del deck[0]
-    deck.append(deck[0])
-    del deck[0]
-
-print(deck[0])
+# arr = [*range(1, N + 1)
+arr = []
+dq = deque(range(1, N + 1))
+while len(dq) > 1:
+    dq.popleft()
+    dq.append(dq.popleft())
