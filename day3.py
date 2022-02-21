@@ -1,16 +1,16 @@
-import heapq as hq
-
-N = int(input())
-heapArr = []
-
-for _ in range(N):
-    for x in eval(input("튜플 형식으로 입력해주세요 :")):
-        if x != 0:
-            hq.heappush(heapArr, x)
-        elif x == 0:
-            hq.heappop(heapArr)
-
-print(heapArr)
+# import heapq as hq
+#
+# N = int(input())
+# heapArr = []
+#
+# for _ in range(N):
+#     for x in eval(input("튜플 형식으로 입력해주세요 :")):
+#         if x != 0:
+#             hq.heappush(heapArr, x)
+#         elif x == 0:
+#             hq.heappop(heapArr)
+#
+# print(heapArr)
 
 
 # 배열에 정수를 넣는다
@@ -23,13 +23,13 @@ print(heapArr)
 # 프로그램은 비어있는 배열에서 시작한다.
 
 
-"""
+
 # Answer
 
 import heapq as hq
 import sys
 
-input = sys.stdin.readilne
+input = sys.stdin.readline
 min_heap = [] # 양수
 max_heap = [] # 음수
 for _ in range(int(input())):
@@ -53,5 +53,3 @@ for _ in range(int(input())):
                 print(hq.heappop(max_heap))
             else:
                 print(0)
-
-"""
