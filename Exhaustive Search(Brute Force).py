@@ -37,6 +37,7 @@ for i in combinations(v, 2):
     print(i)
 """
 
+# boj 2309
 
 # 아홉 난쟁이가 있다
 # 일곱 난쟁이의 키의 합은 100이다
@@ -54,3 +55,10 @@ for i in combinations(heights, 7):
             print(realDwarfs)
 
         break
+
+
+
+
+# 정리
+# 시간초과 나지 않을지 확인
+# 될 거 같으면 완전탐색으로 문제를 푼다.
